@@ -1,0 +1,15 @@
+Myoware_Queue.c:20:6:convertShortToASCII	16	static
+Myoware_Queue.c:31:6:QueueToCSV_UART	24	static
+Myoware_Queue.c:47:5:isFullADC1	4	static
+Myoware_Queue.c:50:5:isFullADC2	4	static
+Myoware_Queue.c:54:5:sizeADC1	4	static
+Myoware_Queue.c:57:5:sizeADC2	4	static
+Myoware_Queue.c:61:7:MeanADC1	4	static
+Myoware_Queue.c:64:7:MeanADC2	4	static
+Myoware_Queue.c:68:7:StdDevADC1	24	static
+Myoware_Queue.c:84:6:insertDataADC1Queue	16	static
+Myoware_Queue.c:99:6:insertDataADC2Queue	16	static
+Myoware_Queue.c:115:7:removeDataADC1Queue	16	static
+Myoware_Queue.c:127:7:removeDataADC2Queue	16	static
+Myoware_Queue.c:140:6:emptyQueueADC1	4	static
+Myoware_Queue.c:147:6:emptyQueueADC2	4	static
