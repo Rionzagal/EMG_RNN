@@ -36,7 +36,7 @@ x_train, x_val, y_train, y_val = train_test_split(features, targets, test_size =
 try:
     model = load_model("LSTM_model.h5","./Models")
 except:
-    model = LSTM_RNN(input_shape=(3,2), output_classes = 5, LSTM_layers = 2, LSTM_units = 256, Dense_layers = 1, Dense_units = 32, DropOut = 0.2)
+    model = LSTM_RNN(input_shape=(3,2), output_classes = 5, LSTM_layers = 2, LSTM_units = 128, Dense_layers = 2, Dense_units = 32, DropOut = 0.2)
     model = compile(model=model, loss='sparse_categorical_crossentropy', metrics=['accuracy'], learning_rate=1e-3, decay=1e-6)
 
-train_model(model, x_train, y_train, x_val, y_val, epochs = 10)
+train_model(model, x_train, y_train, x_val, y_val, epochs = 50)

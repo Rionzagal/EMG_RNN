@@ -111,7 +111,7 @@ class signal(object):
         self.samples = get_queue(signal_df=self.envelopes, window=100)
 
     def sample_features(self):
-        self.features = get_features(sample_data=self.samples)
+        self.features = get_features(samples=self.samples)
 
     def __init__(self, source, fs = 1000, n_channels = 2, n_data = 0):
         """
