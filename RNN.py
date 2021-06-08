@@ -70,7 +70,7 @@ def train_model(model, x_train, y_train, x_val, y_val, epochs = 10):
         plt.show()
         model.save(filepath = f"./models/LSTM_model.h5", overwrite = True, include_optimizer = True)
         print("Trained model saved in filepath: 'models/LSTM_model.h5'.")
-    except:
+    except Exception:
         warnings.warn("Model could not be trained! Please input a valid model.")
 
 def load_model(filename, source):
