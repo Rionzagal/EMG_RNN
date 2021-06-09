@@ -11,7 +11,7 @@ active_filename = files[r_index]
 print(f"Active file for evaluation: {active_filename}")
 
 emg = signal(f"./datasets/Biopac/{active_filename}")
-emg.pre_process(window=50)
+emg.pre_process(window=200)
 
 plt.figure()
 plt.plot(emg.envelopes['t'], emg.envelopes['ch_0'], label='pre_processed ch_0')

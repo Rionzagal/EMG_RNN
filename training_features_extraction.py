@@ -27,7 +27,7 @@ for file in files:
 
         emg = signal(f"./datasets/Biopac/{file}", 1000, 2, 25000)
 
-        envelope_signals = emg.pre_process(1.)
+        envelope_signals = emg.pre_process(window = 200)
         classes = separate(envelope_signals, npoints=4500, separation=5000, n_classes=5)
 
         for index in range(len(classes)):
