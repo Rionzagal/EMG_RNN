@@ -2,6 +2,8 @@
 import os
 import warnings
 
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
 #Numerical analysis modules
 import numpy as np                                              
 import pandas as pd                                             
@@ -13,7 +15,6 @@ from matplotlib import pyplot as plt
 #Machine learning modules
 import tensorflow as tf
 #Filter out info messages from TensorFlow
-tf.get_logger().setLevel('INFO')
 from tensorflow import keras      
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
